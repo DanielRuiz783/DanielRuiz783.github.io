@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mi Portafolio</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 50px;
+    background:rgba(0,0,0,0.4);
+    color:white;
+    z-index:1000;
+}
+
+header h3{
+    color:white;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+}
+
+nav a:hover{
+    text-decoration:underline;
+}
+
+/* HERO */
+
+.hero{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(to right,#b000ff,#00a2ff);
+    padding:20px;
+}
+
+.hero h1{
+    font-size:50px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    margin-bottom:25px;
+}
+
+/* BOTÓN AZUL */
+
+.btn-hero{
+    padding:12px 35px;
+    background:linear-gradient(to right,#2196f3,#1565c0);
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+.btn-hero:hover{
+    transform:scale(1.05);
+    opacity:0.9;
+}
+
+/* SOBRE MI */
+
+#sobre{
+    background:#ffffff;
+    padding:100px 50px;
+}
+
+.sobre-contenedor{
+    display:flex;
+    align-items:center;
+    gap:128px;
+    background:#ffffff;
+    padding:30px;
+    border-radius:10px;
+}
+
+.sobre-contenedor img{
+    width:317px;
+    border-radius:15px;
+}
+
+.sobre-texto h2{
+    margin-bottom:15px;
+}
+
+/* OBJETIVOS */
+
+#objetivos{
+    background:#b7e4c7;
+    padding:100px 50px;
+    text-align:center;
+  background:linear-gradient(to right,#ffffff,#ffffff);
+}
+
+.objetivos-contenedor{
+    margin-top:30px;
+    display:flex;
+    justify-content:center;
+    gap:25px;
+}
+
+.objetivo{
+    background:#caf5e4;
+    padding:30px;
+    width:250px;
+    border-radius:15px;
+ 
+}
+
+/* MIS TRABAJOS */
+
+#mis-trabajos{
+    padding:100px 50px;
+    text-align:center;
+}
+
+.trabajos-contenedor{
+    margin-top:40px;
+    display:flex;
+    justify-content:center;
+    gap:40px;
+}
+
+.trabajo{
+    padding:30px;
+    width:250px;
+    border-radius:50px;
+    color:white;
+    background:linear-gradient(to right,#00c853,#2979ff);
+}
+
+/* CONTACTO */
+
+#contacto{
+    padding:100px 50px;
+    background:linear-gradient(to right,#ffffff,#ffffff);
+    text-align:center;
+}
+
+.formulario{
+    margin:40px auto;
+    background:white;
+    padding:40px;
+    width:350px;
+    border-radius:15px;
+}
+
+.formulario input{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+    border-radius:5px;
+    border:1px solid #ccc;
+}
+
+.formulario button{
+    padding:10px 20px;
+    border:none;
+    background:#ccc;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+footer{
+    background:#222;
+    color:#fff;
+    padding:20px;
+    text-align:center;
+}  
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h3>Mi Portafolio</h3>
+    <nav>
+        <a href="#sobre">Sobre mí</a>
+        <a href="#objetivos">Objetivos</a>
+        <a href="#mis-trabajos">Mis Trabajos</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>Programador En Avance</h1>
+    <p>Creo y construyo un mundo de posibilidades dentro de una plataforma digital.</p>
+    <a href="#mis-trabajos" class="btn-hero">Ver mis trabajos</a>
+</section>
+
+<!-- SOBRE MI -->
+<section id="sobre">
+    <div class="sobre-contenedor">
+        <img src="img/0x1900-000000-80-0-0.jpg" alt="Imagen personal">
+        <div class="sobre-texto">
+            <h2>Sobre mí</h2>
+            <p>Soy un programador novato especializado en HTML, buscando mejorar cada día y brindar un mejor servicio.</p>
+            <p>Los trabajos realizados han sido aceptados por mi instructor, lo cual me permite seguir avanzando.</p>
+        </div>
+    </div>
+</section>
+
+<!-- OBJETIVOS -->
+<section id="objetivos">
+    <h2>Objetivos</h2>
+    <div class="objetivos-contenedor">
+        <div class="objetivo">
+            <h3>Rendimiento</h3>
+            <p>Agilidad en programación.</p>
+        </div>
+        <div class="objetivo">
+            <h3>Velocidad</h3>
+            <p>Mejoras continuas.</p>
+        </div>
+        <div class="objetivo">
+            <h3>Diseño</h3>
+            <p>Diseño enfocado para diversas plataformas.</p>
+        </div>
+    </div>
+</section>
+
+<!-- MIS TRABAJOS -->
+<section id="mis-trabajos">
+    <h2>Mis Trabajos</h2>
+    <div class="trabajos-contenedor">
+        <div class="trabajo">
+            <h3>Código HTML</h3>
+            <p>Páginas funcionales para cualquier negocio.</p>
+        </div>
+        <div class="trabajo">
+            <h3>Enfoque en JavaScript</h3>
+            <p>Se manejar levemente JavaScript.</p>
+        </div>
+        <div class="trabajo">
+            <h3>Diseño Web</h3>
+            <p>Hago modificaciones en páginas web.</p>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto">
+    <h2>Contacto</h2>
+    <div class="formulario">
+        
+        <input type="email" placeholder="Correo Electrónico">
+        <input type="password" placeholder="Contraseña">
+        <button>INGRESAR</button>
+    </div>
+</section>
+<footer id="Reysito">
+    <p>© 2026 Mi Portafolio Reysito</p>
+</footer>
+
+</body>
+</html>

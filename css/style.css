@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+.hero{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.btn-hero{
+    margin-top:20px;
+    padding:12px 30px;
+    background:linear-gradient(to right, #2196f3, #1976d2);
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:500;
+    transition:0.3s ease;
+}
+
+.btn-hero:hover{
+    transform:scale(1.05);
+    opacity:0.9;
+}
+
+
+
